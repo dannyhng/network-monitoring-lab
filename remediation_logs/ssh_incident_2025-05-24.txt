@@ -1,0 +1,21 @@
+Incident: SSH Service Down on Host localhost
+Date: 2025-05-24
+Detected by: Nagios (check_ssh)
+
+Summary:
+Nagios detected that the SSH service on localhost was unreachable.
+
+Response Steps:
+- Logged into the server via local terminal.
+- Verified that SSH was not running.
+- Restarted the SSH service using `sudo systemctl start ssh`.
+
+Resolution Time: 3 minutes
+
+Postmortem:
+The service was intentionally stopped for testing alert behavior.
+No recurring issues found.
+
+Recommendations:
+- Continue monitoring
+- Simulate additional service failures to test other alerts
